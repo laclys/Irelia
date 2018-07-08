@@ -1,6 +1,8 @@
-# New React16 Project
+# Irelia
 
-Use React16/Redux/Redux-Saga/Immutable.js/Styled-components
+### the Blade Dancer(New React16 Project)
+
+React16/Redux/Redux-Saga/Immutable.js/Styled-components
 
 Just for fun!☺️
 
