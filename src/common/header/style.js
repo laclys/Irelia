@@ -65,13 +65,14 @@ export const NavSearch = styled.input.attrs({
   height: 38px;
   margin-top: 9px;
   margin-left: 20px;
-  padding: 0 20px;
+  padding: 0 30px 0 20px;
   border: none;
   outline: none;
   border-radius: 19px;
   box-sizing: border-box;
   font-size: 14px;
   background: #eee;
+  color: #777;
   &::placeholder {
     color: #999;
   }
