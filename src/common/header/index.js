@@ -14,7 +14,7 @@ import {
     Button,
     SearchWrapper,
     SreachInfo,
-    SreachInfoTitle,
+    SearchInfoTitle,
     SearchInfoSwitch,
     SearchInfoItem,
     SearchInfoList
@@ -44,10 +44,10 @@ const Header = (props) => (
           </CSSTransition>
           <i className={props.focused ? 'focused iconfont' : 'iconfont'}>&#xe631;</i>
           <SreachInfo>
-            <SreachInfoTitle>
+            <SearchInfoTitle>
               热门搜索
               <SearchInfoSwitch>换一批</SearchInfoSwitch>
-            </SreachInfoTitle>
+            </SearchInfoTitle>
             <SearchInfoList>
               <SearchInfoItem>教育</SearchInfoItem>
               <SearchInfoItem>教育</SearchInfoItem>

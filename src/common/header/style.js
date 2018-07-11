@@ -107,7 +107,7 @@ export const SreachInfo =styled.div`
   box-shadow: 0 0 8px rgba(0,0,0,.2);
 `
 
-export const SreachInfoTitle = styled.div`
+export const SearchInfoTitle = styled.div`
   margin-top: 20px;
   margin-bottom: 15px;
   line-height: 20px;
