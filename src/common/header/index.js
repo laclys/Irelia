@@ -4,7 +4,21 @@ import { connect } from 'react-redux'
 
 import { actionCreators } from './store'
 
-import { HeaderWrapper, Logo, Nav, NavItem, NavSearch, Addition, Button, SearchWrapper } from './style'
+import {
+    HeaderWrapper,
+    Logo,
+    Nav,
+    NavItem,
+    NavSearch,
+    Addition,
+    Button,
+    SearchWrapper,
+    SreachInfo,
+    SreachInfoTitle,
+    SearchInfoSwitch,
+    SearchInfoItem,
+    SearchInfoList
+      } from './style'
 
 const Header = (props) => (
     <HeaderWrapper>
@@ -29,6 +43,20 @@ const Header = (props) => (
             ></NavSearch>
           </CSSTransition>
           <i className={props.focused ? 'focused iconfont' : 'iconfont'}>&#xe631;</i>
+          <SreachInfo>
+            <SreachInfoTitle>
+              热门搜索
+              <SearchInfoSwitch>换一批</SearchInfoSwitch>
+            </SreachInfoTitle>
+            <SearchInfoList>
+              <SearchInfoItem>教育</SearchInfoItem>
+              <SearchInfoItem>教育</SearchInfoItem>
+              <SearchInfoItem>教育</SearchInfoItem>
+              <SearchInfoItem>教育</SearchInfoItem>
+              <SearchInfoItem>教育</SearchInfoItem>
+              <SearchInfoItem>教育</SearchInfoItem>
+            </SearchInfoList>
+          </SreachInfo>
         </SearchWrapper>
       </Nav>
       <Addition>
