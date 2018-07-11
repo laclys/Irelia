@@ -20,6 +20,29 @@ import {
     SearchInfoList
       } from './style'
 
+const getListArea = (show) => {
+  if (show) {
+    return (
+      <SreachInfo>
+        <SearchInfoTitle>
+          热门搜索
+          <SearchInfoSwitch>换一批</SearchInfoSwitch>
+        </SearchInfoTitle>
+        <SearchInfoList>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+        </SearchInfoList>
+      </SreachInfo>
+    )
+  } else {
+    return null
+  }
+}
+
 const Header = (props) => (
     <HeaderWrapper>
       <Logo />
@@ -43,20 +66,7 @@ const Header = (props) => (
             ></NavSearch>
           </CSSTransition>
           <i className={props.focused ? 'focused iconfont' : 'iconfont'}>&#xe631;</i>
-          <SreachInfo>
-            <SearchInfoTitle>
-              热门搜索
-              <SearchInfoSwitch>换一批</SearchInfoSwitch>
-            </SearchInfoTitle>
-            <SearchInfoList>
-              <SearchInfoItem>教育</SearchInfoItem>
-              <SearchInfoItem>教育</SearchInfoItem>
-              <SearchInfoItem>教育</SearchInfoItem>
-              <SearchInfoItem>教育</SearchInfoItem>
-              <SearchInfoItem>教育</SearchInfoItem>
-              <SearchInfoItem>教育</SearchInfoItem>
-            </SearchInfoList>
-          </SreachInfo>
+          {getListArea(props.focused)}
         </SearchWrapper>
       </Nav>
       <Addition>
