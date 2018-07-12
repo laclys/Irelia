@@ -2,7 +2,7 @@
 
 ### the Blade Dancer(New React16 Project)
 
-React16/Redux/Redux-Saga/Immutable.js/Styled-components
+React16/Redux/Redux-thunk/Immutable.js/Styled-components
 
 Just for fun!☺️
 
