@@ -61,7 +61,7 @@ class Header extends Component {
   }
 
   render () {
-    const { focused, handleInputBlur, handleInputFocus } = this.props
+    const { focused, handleInputBlur, handleInputFocus, list } = this.props
     return (
       <HeaderWrapper>
       <Logo />
@@ -79,9 +79,9 @@ class Header extends Component {
             classNames="slide"
           >
             <NavSearch
-              onFocus={handleInputFocus}
-              onBlur={handleInputBlur}
               className={focused ? 'focused' : ''}
+              onFocus={() => handleInputFocus(list)}
+              onBlur={handleInputBlur}
             ></NavSearch>
           </CSSTransition>
           <i className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>&#xe631;</i>
@@ -112,8 +112,8 @@ const mapStateToprops = (state) => {
 
 const mapDispatchToprops = (dispatch) => {
   return {
-    handleInputFocus() {
-      dispatch(actionCreators.getList())
+    handleInputFocus(list) {
+      (list.size === 0 )&& dispatch(actionCreators.getList())
       dispatch(actionCreators.searchFocus())
     },
     handleInputBlur() {
@@ -127,11 +127,7 @@ const mapDispatchToprops = (dispatch) => {
     },
     handlePageChange(page, totalPage, spin) {
       let originAngle = spin.style.transform.replace(/[^0-9]/ig,'')
-      if (originAngle) {
-        originAngle = parseInt(originAngle, 10)
-      } else {
-        originAngle = 0
-      }
+      originAngle ? originAngle = parseInt(originAngle, 10) : originAngle = 0
       spin.style.transform = 'rotate(' + (originAngle + 360) + 'deg)'
       if (page < totalPage) {
         dispatch(actionCreators.changePage(page + 1))
