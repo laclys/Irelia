@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { TopicWrapper, TopicItem } from '../style'
+import { TopicWrapper, TopicItem, MoreTopics } from '../style'
 
 class Topic extends Component {
   render() {
@@ -16,6 +16,7 @@ class Topic extends Component {
             )
           })
         }
+        <MoreTopics>更多热门专题 > </MoreTopics>
       </TopicWrapper>
     )
   }

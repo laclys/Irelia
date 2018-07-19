@@ -51,3 +51,11 @@ export const TopicItem = styled.div`
     width: 32px
   }
 `
+export const MoreTopics = styled.div`
+  float: left;
+  margin-left: 18px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #787878;
+`
