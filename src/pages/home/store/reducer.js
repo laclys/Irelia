@@ -38,6 +38,32 @@ const defaultState = fromJS({
       title: '读书',
       imgURL: '//upload.jianshu.io/collections/images/4/sy_20091020135145113016.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64'
     },
+  ],
+  articleList: [
+    {
+      id: 1,
+      title: '在唐朝 没有什么事情 是一首诗解决不了的',
+      imgURL: '//upload-images.jianshu.io/upload_images/1219560-d35bd25c5d388f2a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+      desc: '在唐朝，没有什么事情，是一首诗解决不了的。如果有，那就两首。 01 长庆年间，李涉在安庆渡江，路遇劫匪。 劫匪大喝一声：“来者何人，要钱还是要命...'
+    },
+    {
+      id: 2,
+      title: '在唐朝 没有什么事情 是一首诗解决不了的',
+      imgURL: '//upload-images.jianshu.io/upload_images/1219560-d35bd25c5d388f2a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+      desc: '在唐朝，没有什么事情，是一首诗解决不了的。如果有，那就两首。 01 长庆年间，李涉在安庆渡江，路遇劫匪。 劫匪大喝一声：“来者何人，要钱还是要命...'
+    },
+    {
+      id: 3,
+      title: '在唐朝 没有什么事情 是一首诗解决不了的',
+      imgURL: '//upload-images.jianshu.io/upload_images/1219560-d35bd25c5d388f2a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+      desc: '在唐朝，没有什么事情，是一首诗解决不了的。如果有，那就两首。 01 长庆年间，李涉在安庆渡江，路遇劫匪。 劫匪大喝一声：“来者何人，要钱还是要命...'
+    },
+    {
+      id: 4,
+      title: '在唐朝 没有什么事情 是一首诗解决不了的',
+      imgURL: '//upload-images.jianshu.io/upload_images/1219560-d35bd25c5d388f2a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+      desc: '在唐朝，没有什么事情，是一首诗解决不了的。如果有，那就两首。 01 长庆年间，李涉在安庆渡江，路遇劫匪。 劫匪大喝一声：“来者何人，要钱还是要命...'
+    },
   ]
 })
 

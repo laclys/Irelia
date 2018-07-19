@@ -29,6 +29,7 @@ export const TopicWrapper = styled.div`
   overflow: hidden;
   padding: 20px 0 10px 0;
   margin-left: -18px;
+  border-bottom: 1px soild #dcdcdc;
 `
 
 export const TopicItem = styled.div`
@@ -59,3 +60,36 @@ export const MoreTopics = styled.div`
   font-size: 14px;
   color: #787878;
 `
+
+/**
+ * List Component Style
+ */
+
+ export const ListItem = styled.div`
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px dolid #dcdcdc;
+  img {
+    display: block;
+    float: right;
+    width: 125px;
+    height: 100px;
+    border-radius: 10px;
+  }
+ `
+
+ export const ListInfo = styled.div`
+  float: left;
+  width: 500px;
+  .title {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .desc {
+    line-height: 24px;
+    font-size: 13px;
+    color: #999;
+  }
+ `
