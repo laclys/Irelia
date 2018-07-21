@@ -110,3 +110,16 @@ export const MoreTopics = styled.div`
   background:url(${(props) => props.imgURL});
   background-size: contain;
  `
+
+ /**
+ * Writer Component Style
+ */
+export const WriterWrapper = styled.div`
+  width: 278px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+
+`
