@@ -64,6 +64,28 @@ const defaultState = fromJS({
       imgURL: '//upload-images.jianshu.io/upload_images/1219560-d35bd25c5d388f2a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
       desc: '在唐朝，没有什么事情，是一首诗解决不了的。如果有，那就两首。 01 长庆年间，李涉在安庆渡江，路遇劫匪。 劫匪大喝一声：“来者何人，要钱还是要命...'
     },
+  ],
+  recommendList: [
+    {
+      id: 1,
+      imgURL: "http://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+    },
+    {
+      id: 2,
+      imgURL: "http://cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png"
+    },
+    {
+      id: 3,
+      imgURL: "http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+    },
+    {
+      id: 4,
+      imgURL: "http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+    },
+    {
+      id: 5,
+      imgURL: "http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+    },
   ]
 })
 

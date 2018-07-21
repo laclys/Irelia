@@ -12,13 +12,14 @@ export const HomeLeft = styled.div`
   padding-top; 30px;
   width: 625px;
   .banner-img {
+    margin-top: 30px;
     width: 625px;
     height: 270px;
   }
 `
 
 export const HomeRight = styled.div`
-  width: 240px;
+  width: 280px;
   float: right;
 `
 /**
@@ -92,4 +93,20 @@ export const MoreTopics = styled.div`
     font-size: 13px;
     color: #999;
   }
+ `
+
+ /**
+ * Recommend Component Style
+ */
+
+ export const RecommendWrapper = styled.div`
+  margin: 30px 0;
+  width: 280px;
+ `
+
+ export const RecommendItem = styled.div`
+  width: 280px;
+  height: 50px;
+  background:url(${(props) => props.imgURL});
+  background-size: contain;
  `
