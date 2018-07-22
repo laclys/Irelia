@@ -29,3 +29,8 @@ export const getMoreList = (page) => {
     })
   }
 }
+
+export const toggleTopShow = (bool) => ({
+  type: constant.TOGGLE_TOP_SHOW,
+  show: bool
+})
