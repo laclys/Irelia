@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { ListItem, ListInfo } from '../style'
+import { ListItem, ListInfo, LoadMore } from '../style'
 import { connect } from 'react-redux'
 
 class List extends Component {
@@ -20,6 +20,7 @@ class List extends Component {
             )
           })
         }
+        <LoadMore>更多文字</LoadMore>
       </Fragment>
     )
   }
