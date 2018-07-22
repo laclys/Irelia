@@ -120,6 +120,7 @@ export const MoreTopics = styled.div`
  export const RecommendItem = styled.div`
   width: 280px;
   height: 50px;
+  margin-bottom: 6px;
   background:url(${(props) => props.imgURL});
   background-size: contain;
  `
