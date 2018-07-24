@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { DetailWrapper, Header, Content } from './style'
-import { } from './store'
 import { actionCreators } from '../detail/store';
 
 class Detail extends Component {
 
   componentDidMount() {
-    this.props.getDetailData()
+    this.props.getDetailData(this.props.match.params.id)
   }
 
   render() {
@@ -28,8 +27,8 @@ const mapState = (state) => ({
 })
 
 const mapDispatch = (dispatch) => ({
-  getDetailData() {
-    dispatch(actionCreators.getDetail())
+  getDetailData(id) {
+    dispatch(actionCreators.getDetail(id))
   }
 })
 
