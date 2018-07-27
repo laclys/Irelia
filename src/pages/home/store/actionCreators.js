@@ -18,6 +18,8 @@ export const getHomeInfo = () => {
   return (dispatch) => {
     axios.get('/api/home.json').then(res => {
       dispatch(changeHomeData(res.data.data))
+    }).catch(err => {
+      console.log(err)
     })
   }
 }
@@ -26,6 +28,8 @@ export const getMoreList = (page) => {
   return (dispatch) => {
     axios.get('/api/homeList.json?page=' + page).then(res => {
       dispatch(addHomeList(res.data.data, page + 1))
+    }).catch(err => {
+      console.log(err)
     })
   }
 }

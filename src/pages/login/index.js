@@ -8,8 +8,7 @@ class Login extends PureComponent {
 
   render() {
     const { loginState, login } = this.props
-    if (!loginState) {
-      return (
+      return !loginState ? (
         <LoginWrapper>
           <LoginBox>
             <Input placeholder="账号" innerRef={(input) => {this.account = input}} />
@@ -17,10 +16,7 @@ class Login extends PureComponent {
             <Button onClick={() => login(this.account, this.password)} >Login</Button>
           </LoginBox>
         </LoginWrapper>
-      ) 
-    } else {
-      return <Redirect to='/' />
-    }
+      ) : <Redirect to='/' />
   }
 }
 
