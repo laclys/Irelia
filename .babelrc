@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "react-app"
+  ],
+  "plugins": [
+    "syntax-decorators",
+    "transform-decorators-legacy",        
+    "transform-decorators",
+    "transform-regenerator"
+  ]
+}
