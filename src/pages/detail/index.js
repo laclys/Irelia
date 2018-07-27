@@ -2,7 +2,9 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { DetailWrapper, Header, Content } from './style'
 import { actionCreators } from '../detail/store'
+import { withRouter } from 'react-router-dom'
 
+@withRouter
 class Detail extends PureComponent {
 
   componentDidMount() {
