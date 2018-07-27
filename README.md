@@ -4,6 +4,15 @@
 
 React16/Redux/Redux-thunk/Immutable.js/Styled-components
 
-Just for fun!☺️
+### Install&&Run
 
-開発なう👹👺👽
+```bash
+# git clone
+git clone git@github.com:laclys/Irelia.git
+# install
+yarn
+# play
+yarn start
+```
+
+Just for fun!☺️
